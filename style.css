@@ -1,7 +1,21 @@
-div {
+/* div {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.img-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.main-footer li {
+    display: inline;
+}
+
+img {
+    width: 50%;
+}
 .btn {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -21,4 +35,47 @@ div {
     margin: 50px;
     border: 10px solid black;
     background-color: red;
+} */
+
+/* START OF SPOTIFY SEARCH CSS */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    flex-basis: 50%;
+}
+
+/* HEADER FORMATTING */
+.header {
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.header.header-left {
+    align-self: flex-start;
+}
+
+.header.header-right {
+    align-self: flex-end;
+}
+
+/* LEFT BODY */
+.search-items {
+    flex-grow: 2;
 }
